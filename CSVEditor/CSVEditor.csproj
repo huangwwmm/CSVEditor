@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39905A57-FB8A-4A31-A808-C0DC76E5ED15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSVEditor</RootNamespace>
+    <AssemblyName>CSVEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CSVEditor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ude, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UDE.CSharp.1.1.0\lib\Ude.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datas\CsvLayout.cs" />
+    <Compile Include="Datas\GlobalData.cs" />
+    <Compile Include="Datas\Setting.cs" />
+    <Compile Include="Forms\DataGridViewConsoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataGridViewConsoleForm.Designer.cs">
+      <DependentUpon>DataGridViewConsoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GotoForm.Designer.cs">
+      <DependentUpon>GotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LayoutManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LayoutManagerForm.Designer.cs">
+      <DependentUpon>LayoutManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LayoutNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LayoutNameForm.Designer.cs">
+      <DependentUpon>LayoutNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\MergeLocalizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\MergeLocalizationForm.Designer.cs">
+      <DependentUpon>MergeLocalizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\CSVLayoutManager.cs" />
+    <Compile Include="Plugins\CheckBoxComboBox\CheckBoxComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\CheckBoxComboBox\CheckBoxComboBox.Designer.cs">
+      <DependentUpon>CheckBoxComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\CheckBoxComboBox\GripBounds.cs" />
+    <Compile Include="Plugins\CheckBoxComboBox\NativeMethods.cs" />
+    <Compile Include="Plugins\CheckBoxComboBox\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\CheckBoxComboBox\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\CheckBoxComboBox\PopupComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plugins\CheckBoxComboBox\PopupComboBox.Designer.cs">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\CheckBoxComboBox\Selection Wrappers\ListSelectionWrapper.cs" />
+    <Compile Include="Plugins\CheckBoxComboBox\Selection Wrappers\ObjectSelectionWrapper.cs" />
+    <Compile Include="Plugins\DataGridViewUtility.cs" />
+    <Compile Include="Plugins\Debug\Log\Log.cs" />
+    <Compile Include="Plugins\Debug\Log\LogConsoleType.cs" />
+    <Compile Include="Plugins\Debug\Log\LogConsoleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plugins\Debug\Log\LogConsoleWindow.Designer.cs">
+      <DependentUpon>LogConsoleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\Debug\Log\LogFilter.cs" />
+    <Compile Include="Plugins\Debug\Log\LogItem.cs" />
+    <Compile Include="Plugins\Debug\Log\LogLevel.cs" />
+    <Compile Include="Plugins\ConvertUtility.cs" />
+    <Compile Include="Plugins\Csv\CSVExport.cs" />
+    <Compile Include="Plugins\Csv\CSVParser.cs" />
+    <Compile Include="Forms\CSVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CSVForm.Designer.cs">
+      <DependentUpon>CSVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\CSVEditManager.cs" />
+    <Compile Include="Plugins\DebugUtility.cs" />
+    <Compile Include="Plugins\FileUtility.cs" />
+    <Compile Include="Plugins\LitJson\IJsonWrapper.cs" />
+    <Compile Include="Plugins\LitJson\JsonAttribute.cs" />
+    <Compile Include="Plugins\LitJson\JsonData.cs" />
+    <Compile Include="Plugins\LitJson\JsonException.cs" />
+    <Compile Include="Plugins\LitJson\JsonMapper.cs" />
+    <Compile Include="Plugins\LitJson\JsonReader.cs" />
+    <Compile Include="Plugins\LitJson\JsonWriter.cs" />
+    <Compile Include="Plugins\LitJson\Lexer.cs" />
+    <Compile Include="Plugins\LitJson\ParserToken.cs" />
+    <Compile Include="Plugins\RegistryUtility.cs" />
+    <Compile Include="Plugins\SerializeUtility.cs" />
+    <Compile Include="Plugins\StringUtility.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verifier\BaseVerifier.cs" />
+    <Compile Include="Verifier\DefaultVerifier.cs" />
+    <Compile Include="Verifier\LocalizationVerifier.cs" />
+    <Compile Include="Verifier\VerifierUtility.cs" />
+    <EmbeddedResource Include="Forms\CSVForm.resx">
+      <DependentUpon>CSVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataGridViewConsoleForm.resx">
+      <DependentUpon>DataGridViewConsoleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GotoForm.resx">
+      <DependentUpon>GotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LayoutManagerForm.resx">
+      <DependentUpon>LayoutManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LayoutNameForm.resx">
+      <DependentUpon>LayoutNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\MergeLocalizationForm.resx">
+      <DependentUpon>MergeLocalizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\CheckBoxComboBox\PopupComboBox.resx">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\Debug\Log\LogConsoleWindow.resx">
+      <DependentUpon>LogConsoleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSVEditor.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

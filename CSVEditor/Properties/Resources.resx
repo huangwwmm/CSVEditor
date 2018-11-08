@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AMFilePathHint" xml:space="preserve">
+    <value>需要合并到源文件的文件，一般是翻译返回的本地化csv文件
+AM是AppendModify的缩写</value>
+    <comment>AM文件的解释</comment>
+  </data>
+  <data name="CharsetDetectorFailedHint" xml:space="preserve">
+    <value>没有检测出文件
+{0}
+的编码
+请注意检查文件内容是否有乱码</value>
+    <comment>打开文件没有检测出文件编码的提示</comment>
+  </data>
+  <data name="CharsetDetectorNotUTF8Hint" xml:space="preserve">
+    <value>检测到文件
+{0}
+的编码是"{1}"
+请注意检查文件内容是否有乱码
+
+如果有乱码，请先尝试用其他软件修改文件的编码
+解决不了乱码问题，请找陈天和黄文淼</value>
+    <comment>打开文件检测文件编码不是UTF-8时的提示</comment>
+  </data>
+  <data name="CloseCSVFormAfterDiffMessageText" xml:space="preserve">
+    <value>确定要关闭当前的CSV表么？
+
+请在弹出的Diff软件中，比较文件差异，确认无误后再关闭
+如果没有弹出Diff软件，请找黄文淼</value>
+    <comment>关闭CSVForm时的提示</comment>
+  </data>
+  <data name="ConfirmThisOperation" xml:space="preserve">
+    <value>确认执行这个操作？</value>
+  </data>
+  <data name="CSVFileAssociationToolsHint" xml:space="preserve">
+    <value>这个操作会设置csv文件的默认程序为CSV编辑器</value>
+    <comment>运行"关联csv文件时的提示"</comment>
+  </data>
+  <data name="MergeLocalizationToolAMCSVKeyContainsSpaceMessageCaption" xml:space="preserve">
+    <value>AM文件中本地化Key包含空格</value>
+    <comment>运行本地化合并工具进行合并的过程中，检测到AM文件中本地化Key包含空格的提示</comment>
+  </data>
+  <data name="MergeLocalizationToolAMCSVKeyContainsSpaceMessageText" xml:space="preserve">
+    <value>Key：({0})
+
+注：
+这个错误在AM文件中，并非当前打开的文件
+
+说明：
+请去掉AM文件中本地化Key中的空格后重新运行本地化合并工具
+点击本地化合并工具界面右上角的"?"查看提示
+本地化表中的Key不应该包含空格
+出现这个错误，可能是翻译人员手抖加了空格</value>
+    <comment>运行本地化合并工具进行合并的过程中，检测到AM文件中本地化Key包含空格的提示</comment>
+  </data>
+  <data name="MergeLocalizationToolColumCountInconformityHint" xml:space="preserve">
+    <value>  源文件：有{0}列
+AM文件：有{1}列
+
+列数不一样，请检查文件正确</value>
+    <comment>运行本地化合并工具，AM文件和源文件列数不同时的提示</comment>
+  </data>
+  <data name="MergeLocalizationToolHelpText" xml:space="preserve">
+    <value>说明：
+AM文件会被合并到源文件
+
+注：
+AM文件的表头(第一行)应该和源文件一一对应
+例：源文件第3列是"English"，那么AM文件的第三列也应该是"English"
+
+操作流程：
+●检验AM文件
+    ○用CSV编辑器打开AM文件
+    ○点击顶部菜单栏：布局-&gt;应用校验规则-&gt;本地化
+    ○点击顶部菜单栏：工具-&gt;校验当前打开的表
+    ○按照提示修改AM文件
+●校验源文件，方法同"校验AM文件"
+●本地化合并
+    ○用CSV编辑器打开源文件
+    ○点击顶部菜单栏：工具-&gt;本地化合并
+    ○选择AM文件，运行
+
+合并规则：
+●遍历AM文件中的每一行
+●获取这行AM数据的AMKey(去除头尾的空白字符)
+●如果AMKey为空，跳过这条数据
+●在源文件中查找AMKey
+    ○源文件中不存在AMKey
+          ◆把这行数据插入到源文件结尾
+    ○源文件中存在AMKey
+          ◆把这行AM数据合并到源文件
+          ◆如果AM数据中一个单元格值为空，则跳过这个单元格
+          ◆按列号合并，并不是按照本地化的语言合并
+
+名词字典：
+      源文件：当前打开的本地化csv文件，一般是主干上的本地化csv文件
+    AM文件：需要合并到源文件的文件，一般是翻译返回的本地化csv文件
+                  AM是AppendModify的缩写
+本地化文件：第一行第一个单元格为"String ID"的csv文件</value>
+    <comment>本地化合并工具的帮助文本</comment>
+  </data>
+  <data name="MergeLocalizationToolMergeCompleteHint" xml:space="preserve">
+    <value>本地化合并完成
+注意检查文件编码！！！</value>
+    <comment>运行本地化合并工具，合并完成后提示</comment>
+  </data>
+  <data name="MergeLocalizationToolNotChooseAMCSVHint" xml:space="preserve">
+    <value>请选择AM文件</value>
+    <comment>运行本地化合并工具时，未选择AM文件时的错误提示</comment>
+  </data>
+  <data name="MergeLocalizationToolNotExistsAMCSVHint" xml:space="preserve">
+    <value>选择的AM文件不存在</value>
+    <comment>运行本地化合并工具时，选择的AM文件不存在时的错误提示</comment>
+  </data>
+  <data name="MergeLocalizationToolNotLocalizationCSVHint" xml:space="preserve">
+    <value>选择的AM文件可能不是本地化文件？
+本地化文件：第一行第一个单元格为"String ID"的csv文件</value>
+    <comment>运行本地化合并工具时，检测到AM文件不是本地化文件的错误提示</comment>
+  </data>
+  <data name="RemoveAllTabAndConvertAllCRLFToLFToolsHint" xml:space="preserve">
+    <value>这个操作会移除表中所有的'\t'，并把"\r\n"替换为"\n"</value>
+    <comment>运行移除所有制表符并转换所有换行符时的提示</comment>
+  </data>
+  <data name="SearchFormWildcardHelpText" xml:space="preserve">
+    <value>查找：
+●“使用通配符时”，使用精准查找
+●不“使用通配符时”，使用模糊查找
+●通配符：
+    ○'*'可以代替任意长度的任意字符
+    ○'?'可以代替单个字符
+●精准查找：
+    ○单元格内容和“查找内容”必须完全匹配
+●模糊查找：
+    ○单元格内容包含“查找内容”
+
+替换：
+●不区分大小写时，不能替换
+●使用通配符时，将查找到的单元格内容替换为“替换为”
+●不使用通配符时，只将“查找内容”替换为“替换为”</value>
+    <comment>搜索界面的帮助</comment>
+  </data>
+  <data name="VerifyDescriptionDefault" xml:space="preserve">
+    <value>校验规则
+
+错误：
+●单元格包含非法字符("\t", "\r\n")
+
+警告：
+●单元格头尾包含空白字符</value>
+    <comment>检验规则的描述</comment>
+  </data>
+  <data name="VerifyDescriptionLocalization" xml:space="preserve">
+    <value>校验规则
+
+错误：
+●单元格包含非法字符("\t", "\r\n")
+●第一行第一个单元格不是"String ID"
+●有重复的Key
+
+警告：
+●(这条警告暂时关闭了)单元格内容头尾包含空白字符
+●Key包含空白字符
+●Key为空，但是Text不为空
+●Text以占位符"PLACEHOLDER"开头
+●Text为空，且Key不为空
+●Text为两段重复的文本
+
+消息：
+●行内有内容重复的单元格
+
+名词字典：
+Key：本地化表的第一列为本地化Key
+Text：本地化表中的翻译，本地化表的第2列到最后一列</value>
+    <comment>检验规则的描述</comment>
+  </data>
+  <data name="VerifyDescriptionPlane" xml:space="preserve">
+    <value>校验规则
+
+错误：
+●单元格包含非法字符("\t", "\r\n")
+●PlaneTag列的数值不是由n个两位数字组成(n大于0)
+
+警告：
+●单元格头尾包含空白字符</value>
+    <comment>检验规则的描述</comment>
+  </data>
+  <data name="VerifyMessageCaption_HeadAndTailWhiteSpace" xml:space="preserve">
+    <value>单元格头尾包含空白字符</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_FirstCell" xml:space="preserve">
+    <value>本地化表的第一行第一个单元格应为"String ID"</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_EmptyKey" xml:space="preserve">
+    <value>Key不能为空</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_RepeatKey" xml:space="preserve">
+    <value>表中包含重复的本地化Key</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_Plane_Tag" xml:space="preserve">
+    <value>PlaneTag必须由n个两位数字组成(n大于0)</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_RepeatCellInRow" xml:space="preserve">
+    <value>行内有内容重复的单元格</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_TabOrCRLF" xml:space="preserve">
+    <value>单元格内容包含非法字符("\t", "\r\n")</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageText_HeadAndTailWhiteSpace" xml:space="preserve">
+    <value>单元格内容：
+({0})
+
+空白字符由Unicode标准定义
+参考Wiki：https://en.wikipedia.org/wiki/Whitespace_character</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_EmptyKey" xml:space="preserve">
+    <value>Key：
+({0})
+
+Key为空但是Text不为空，代表这行无效。如果不是漏填了Key，就忽略这条警告</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_RepeatKey" xml:space="preserve">
+    <value>重复的Key:
+{0}</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_Plane_Tag" xml:space="preserve">
+    <value>例："000112"、"1112"</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_RepeatCellInRow" xml:space="preserve">
+    <value>重复的列:
+{0}
+怀疑是复制的时候手抖，把一个单元格复制到一行内的多个单元格</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_TabOrCRLF" xml:space="preserve">
+    <value>单元格内容：
+({0})
+
+运行"移除所有制表符并转换所有换行符"工具可以修复这个错误</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_EmptyText" xml:space="preserve">
+    <value>未填写本地化文本</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_KeyWhiteSpace" xml:space="preserve">
+    <value>Key不能包含空白字符</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_PlaceHolder" xml:space="preserve">
+    <value>单元格内容包含占位符"PLACEHOLDER"</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_EmptyText" xml:space="preserve">
+    <value>如果是因为本地化的翻译还没返回，请填写占位符"PLACEHOLDER"（注意填大写）</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_FirstCell" xml:space="preserve">
+    <value>当前为({0})</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_KeyWhiteSpace" xml:space="preserve">
+    <value>Key：
+({0})
+
+Key包含空白字符，例如空格、换行符等
+是不是手抖把下划线'_'打成了空格？</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_PlaceHolder" xml:space="preserve">
+    <value>出现“PLACEHOLDER”，可能是因为本地化文本的翻译还没返回，临时占位用的</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="MergeLocalizationToolHeadNotSame" xml:space="preserve">
+    <value>AM文件和源文件的列头不一致
+AM文件第{0}列的列头：({1})
+源文件第{0}列的列头：  ({2})</value>
+    <comment>运行本地化合并工具时，检测到AM文件和源文件列头不一致</comment>
+  </data>
+  <data name="MergeLocalizationToolNotSelectMergeColHint" xml:space="preserve">
+    <value>没有选择指定的列</value>
+    <comment>运行本地化合并工具时，检测错误提示</comment>
+  </data>
+  <data name="VerifyMessageCaption_Localization_Special1" xml:space="preserve">
+    <value>单元格内容是两段重复的文本，Key：{0}</value>
+    <comment>VerifyUtility，验证后的消息提示Caption</comment>
+  </data>
+  <data name="VerifyMessageText_Localization_Special1" xml:space="preserve">
+    <value>单元格内容：
+({0})</value>
+    <comment>VerifyUtility，验证后的消息提示Text</comment>
+  </data>
+  <data name="ApplicationRunFailed_LowVersion" xml:space="preserve">
+    <value>CSVEditor当前版本已过期，请更新SVN
+最新版本({0})
+当前版本({1})
+
+</value>
+  </data>
+  <data name="ApplicationRunFailed_NoVersionFile" xml:space="preserve">
+    <value>无法打开CSVEditor
+出现这个问题可能是以下原因：
+■CSVEditor.exe不在SVN目录下
+■没有联网
+
+SVN路径：http://172.16.19.225:81/svn/OrientalSkyServerTables/utilities/CSVEditor/CSVeditor.exe
+
+如果你无法解决这个问题，请给黄文淼看以下内容：
+{0}</value>
+  </data>
+  <data name="CSVEditor_ChangeNote" xml:space="preserve">
+    <value>v0.4.2
+	"查找和替换"窗口在已经打开时按Ctrl+f，把"查找和替换"窗口弹到屏幕最前
+
+v0.4.1
+	修复"查找和替换"、"转到"窗口开启时，保存文件弹出的祥细框不可点的问题
+
+v0.4.0
+	添加CSVEditor启动后检查最新版本，如果当前不是最新版，弹出对话框提示，并退出CSVEditor
+	添加本地化校验规则：
+		Warning 本地化翻译是两段重复的文本
+
+v0.3.4
+	增加本地化合并工具对"Chinese_Uncensor"列的支持
+
+v0.3.3
+	增加本地化检测规则的Warning：
+		填写本地化Key的行，没填写Text
+		单元格内容以 ”PLACEHOLDER“开始
+	搜索界面，添加没有搜索到时的提示		
+	本地化合并工具：添加”合并指定列“功能
+
+v0.3.2
+	修改帮助中的提示文本
+
+v0.3.1
+	添加"打开文件时，检测文件编码"功能
+
+v0.3.1
+	支持打开拖拽到主窗口的文件
+
+v0.3.0
+	添加"插入复制的单元格"功能
+	添加校验规则"Plane"
+	添加Tortoise的Diff
+	这次更新导致之前的Layout.bin、Setting.bin无效
+
+v0.2.4
+	搜索界面添加帮助
+
+v0.2.3
+	本地化合并工具
+		增量文件 -&gt; AM文件
+		检测第一列KEY的重复性
+	补充Tooltip，含有Tooltip的控件文本结尾包含'(?)'
+	取消csv文件关联，需要自己手动修改文件默认打开方式
+
+v0.2.2
+	本地化校验规则
+		优化报错信息
+		添加对Key进行校验
+			Key中不能包含空格
+			Key不能为空(如果整行为空，那么Key可以为空)
+	本地化合并工具
+		优化操作过程中的报错和提示
+		添加帮助(包括操作流程)
+	修复BUG
+		应用布局时，窗口标题显示的校验规则没刷新(实际已经生效，只是没刷新显示)
+
+v0.2.1:
+	本地化合并工具
+		Merge时，没有对目标csv的cell值进行校验
+			正确预期：是目标csv的cell为空，就不修改源csv的cell，且报Log
+		Merge时，没有对KEY进行校验
+			正确预期：KEY检验失败时不Merge改行，且报WarningLog</value>
+  </data>
+</root>
